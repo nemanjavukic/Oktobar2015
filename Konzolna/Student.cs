@@ -61,6 +61,28 @@ namespace Konzolna
 
         }
 
+        public int drugaMetoda() //najveca ocena nekog studenta u trecoj godini
+        {
+            int najveca = 5;
+
+            foreach (Ispit i in spisakIspita)
+            {
+                if(i.Predmet.Godina == 3)
+                {
+                    if (i.Ocena > najveca)
+                    {
+                        najveca = i.Ocena;
+                    }
+                }
+            }
+
+
+            return najveca;
+
+        }
+
+
+
         static void Main(string[] args)
         {
         }
