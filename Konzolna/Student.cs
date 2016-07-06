@@ -81,8 +81,80 @@ namespace Konzolna
 
         }
 
+        public string trecaMetoda(Predmet p)
+        {
+            string pom = "";
+            foreach (Ispit i in spisakIspita)
+            {
+                if (i.Predmet.Equals(p)&& i.Ocena>5)
+                {
+                    pom = "jeste";
+                }
+                else
+                {
+                    pom = "nije";
+                }
+            }
+            return pom;
+        }
 
+        public int cetvrtaMetoda(string prof)
+        {
+            int br = 0;
+            foreach (Ispit i in spisakIspita)
+            {
+                if (i.Predmet.Profesor.Equals(prof))
+                {
+                    br++;
+                }
+            }
+            return br;
+        }
 
+        public string petaMetoda()
+        {
+            List<string> spisakProfesora = new List<string>();
+            foreach (Ispit i in spisakIspita)
+            {
+                if (!spisakProfesora.Contains(i.Predmet.Profesor))
+                {
+                    spisakProfesora.Add(i.Predmet.Profesor);
+                }
+            }
+
+            string pom = "";
+
+            foreach (string  s in spisakProfesora)
+            {
+                pom +=s;
+            }
+
+            return pom;
+        }
+
+        public List<DateTime> sestaMetoda()
+        {
+            List<DateTime> datumi = new List<DateTime>();
+
+            foreach (Ispit i in spisakIspita)
+            {
+                datumi.Add(i.Datum);
+            }
+            return datumi;
+        }
+
+        public List<Predmet> sedmaMetoda()
+        {
+            List<Predmet> predmeti = new List<Predmet>();
+            foreach (Ispit i in spisakIspita)
+            {
+                if (!predmeti.Contains(i.Predmet))
+                {
+                    predmeti.Add(i.Predmet);
+                }
+            }
+            return predmeti;
+        }
         static void Main(string[] args)
         {
         }
