@@ -143,12 +143,12 @@ namespace Konzolna
             return datumi;
         }
 
-        public List<Predmet> sedmaMetoda()
+        public List<Predmet> sedmaMetoda(int god)
         {
             List<Predmet> predmeti = new List<Predmet>();
             foreach (Ispit i in spisakIspita)
             {
-                if (!predmeti.Contains(i.Predmet))
+                if (!predmeti.Contains(i.Predmet) && i.Predmet.Godina ==god)
                 {
                     predmeti.Add(i.Predmet);
                 }
