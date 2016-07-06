@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oktobar2015", "Oktobar2015\Oktobar2015.csproj", "{FB763F6B-4AFF-4086-8A5B-57A610DABDCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konzolna", "Konzolna\Konzolna.csproj", "{E7A01165-FA3F-4A59-A074-7A21BC22985A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB763F6B-4AFF-4086-8A5B-57A610DABDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB763F6B-4AFF-4086-8A5B-57A610DABDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB763F6B-4AFF-4086-8A5B-57A610DABDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB763F6B-4AFF-4086-8A5B-57A610DABDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A01165-FA3F-4A59-A074-7A21BC22985A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A01165-FA3F-4A59-A074-7A21BC22985A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A01165-FA3F-4A59-A074-7A21BC22985A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A01165-FA3F-4A59-A074-7A21BC22985A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
